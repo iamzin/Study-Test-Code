@@ -5,7 +5,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.3"
 	kotlin("jvm") version "1.9.10"
 	kotlin("plugin.spring") version "1.9.10"
-	kotlin("plugin.jpa") version "1.9.10"
+//	kotlin("plugin.jpa") version "1.9.10"
 }
 
 group = "com.example"
@@ -27,8 +27,8 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+//	implementation("org.springframework.boot:spring-boot-starter-web")
+//	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
@@ -38,6 +38,7 @@ dependencies {
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation(kotlin("script-runtime"))
 }
 
 tasks.withType<KotlinCompile> {
