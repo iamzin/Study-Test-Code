@@ -38,6 +38,8 @@ dependencies {
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.assertj:assertj-core:3.24.2")
+
 	implementation(kotlin("script-runtime"))
 }
 

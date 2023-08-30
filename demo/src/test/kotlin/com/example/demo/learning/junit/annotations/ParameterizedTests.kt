@@ -1,7 +1,6 @@
 package com.example.demo.learning.junit.annotations
 
-import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.Assertions.assertTrue
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.ValueSource
 import org.junit.platform.commons.util.StringUtils
@@ -13,6 +12,6 @@ class ParameterizedTests {
     fun palindromes(
             candidate: String
     ) {
-        assertTrue(StringUtils.isNotBlank(candidate))
+        assertThat(StringUtils.isNotBlank(candidate))
     }
 }

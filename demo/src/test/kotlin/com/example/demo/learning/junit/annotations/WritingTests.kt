@@ -1,15 +1,14 @@
 package com.example.demo.learning.junit.annotations
 
-import com.example.demo.learning.junit.annotations.Fast
-import com.example.demo.learning.junit.annotations.FastTest
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 
 class WritingTests {
 
     @Test
     fun addition() {
-        assertEquals(2, 1 + 1)
+        assertThat(1 + 1).isEqualTo(2)
+
     }
 
     @Fast
