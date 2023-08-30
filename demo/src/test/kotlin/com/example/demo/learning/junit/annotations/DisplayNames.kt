@@ -7,18 +7,15 @@ import org.junit.jupiter.api.Test
 class DisplayNames {
 
     @Test
-    @DisplayName("Custom test name containing spaces")
-    fun testWithDisplayNameContainingSpaces() {
+    fun `Custom test name containing spaces`() {
     }
 
     @Test
-    @DisplayName("╯°□°）╯")
-    fun testWithDisplayNameContainingSpecialCharacters() {
+    fun `╯°□°）╯`() {
     }
 
     @Test
-    @DisplayName("🥰")
-    fun testWithDisplayNameContainingEmoji() {
+    fun `🥰`() {
 
     }
 }
