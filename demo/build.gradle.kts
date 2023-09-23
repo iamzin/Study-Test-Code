@@ -27,8 +27,6 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
-//	implementation("org.springframework.boot:spring-boot-starter-web")
-//	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 	developmentOnly("org.springframework.boot:spring-boot-docker-compose")
@@ -38,6 +36,10 @@ dependencies {
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation(kotlin("test"))
+	testImplementation("org.junit.jupiter:junit-jupiter-params:5.6.3")
+	testImplementation("org.assertj:assertj-core:3.24.2")
+
 	implementation(kotlin("script-runtime"))
 }
 
