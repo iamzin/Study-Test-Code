@@ -9,6 +9,6 @@ class Game {
     }
 
     fun score(): Int {
-        return rollHistory.sum()
+        return rollHistory.sum() + rollHistory[2]
     }
 }
